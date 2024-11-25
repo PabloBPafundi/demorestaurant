@@ -12,7 +12,7 @@ import java.util.Optional;
 @Repository
 public class OrderRepository {
 
-    private final List<Order> orders = new ArrayList<>();
+    private static final List<Order> orders = new ArrayList<>();
     private final MenuRepository menuRepository;
 
     public OrderRepository(MenuRepository menuRepository){
