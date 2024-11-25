@@ -10,7 +10,7 @@ import java.util.Optional;
 @Repository
 public class MenuRepository {
 
-    private final List<Menu> menus = new ArrayList<>();
+    private static final List<Menu> menus = new ArrayList<>();
 
     @PostConstruct
     public void init(){
